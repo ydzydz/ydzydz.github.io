@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>test location.reload</title>
+		<meta charset="utf-8"/>
+	</head>
+
+	<body>
+
+		<a href="javascript:;" onclick="test()">点我刷新页面</a>
+		<script>
+		window.onload = function  (argument) {
+			alert('打开时及刷新成功会弹出这个')
+		}
+		function test(){
+			alert('点我了，要开始刷新了');
+			location.reload(true);
+		}
+		</script>
+	</body>
+</html>
